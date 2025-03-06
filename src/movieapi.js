@@ -1,6 +1,6 @@
 import React from "react";
 
-const apiKey = `http://www.omdbapi.com/?i=tt3896198&apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
+const apiKey = `https://www.omdbapi.com/?i=tt3896198&apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
 
 /**
  * Searches for movies by title.
