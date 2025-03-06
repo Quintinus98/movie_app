@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * A component that renders a movie card with a poster, title, and year.
+ * @param {{ Poster: string, Title: string, Type: string, Year: string }} movie - The movie object to be displayed on the card.
+ * @returns {ReactElement} A JSX element representing the movie card.
+ */
 const MovieCard = ({ movie }) => {
   return (
     <div className="mt-6 max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">

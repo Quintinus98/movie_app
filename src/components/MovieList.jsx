@@ -1,6 +1,13 @@
 import React from "react";
 import MovieCard from "./MovieCard";
 
+/**
+ * A component that renders a list of movies as a grid of MovieCard components.
+ * If no movies are found, it displays a message indicating that no movies were found.
+ * @param {Object[]} movies - An array of movie objects to be displayed.
+ * @param {string} movies[].imdbID - The unique identifier for each movie.
+ */
+
 const MovieList = ({ movies }) => {
   return (
     <div>

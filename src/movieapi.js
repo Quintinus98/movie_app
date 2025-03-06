@@ -2,6 +2,13 @@ import React from "react";
 
 const apiKey = `http://www.omdbapi.com/?i=tt3896198&apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
 
+/**
+ * Searches for movies by title.
+ *
+ * @param {string} query - The query string to search for.
+ * @returns {Promise<Object>} A promise that resolves with the search result.
+ * @throws {Error} If there is an error fetching movies.
+ */
 const searchMovies = async (query) => {
   try {
     const res = await fetch(`${apiKey}&s=${query}`);

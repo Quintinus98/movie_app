@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import searchIcon from "../assets/search.svg";
 
+/**
+ * A component that renders a search bar with an input field and a search icon.
+ * When the form is submitted, it calls the `sendDataToApp` function with the current search value.
+ * @param {function(string)} sendDataToApp - A function to send the current search value to the app.
+ * @returns {ReactElement} A JSX element representing the search bar.
+ */
 const SearchBar = ({ sendDataToApp }) => {
   const [search, setSearch] = useState("");
 
