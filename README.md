@@ -29,6 +29,7 @@ Here's a breakdown of what the code does:
 
 1. Clone the repository
 2. run `npm install`
+3. Setup the env variable (see below for how to do it.)
 3. run `npm run dev`
 
 ## Live Demo of the Movie App
@@ -36,5 +37,18 @@ Here's a breakdown of what the code does:
 Copy the link to your browser.
 
 ```sh
-https://...
+https://movie-app-dso.netlify.app/
 ```
+
+## Setting Up the env variable
+1. Visit http://www.omdbapi.com/apikey.aspx
+2. Choose the FREE tier (1,000 daily limit)
+3. Fill in the form with:
+    - Your email address
+    - Purpose: "Educational/Learning"
+4. Check your email for the API key (usually arrives within minutes)
+5. Test your API key using this format:
+    - http://www.omdbapi.com/?apikey=YOUR_KEY_HERE&s=batman
+6. Create a .env file in the root of the your project folder
+7. Update the .env file with `VITE_OMDB_API_KEY=YOUR_KEY_HERE`
+8. You're good to go
